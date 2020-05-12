@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A0E7C57-89D0-41C0-8C24-8E8D0E8A607F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BeatTheBrain.My.MyApplication</StartupObject>
+    <RootNamespace>BeatTheBrain</RootNamespace>
+    <AssemblyName>BeatTheBrain</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BeatTheBrain.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BeatTheBrain.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avatar Selection\frmAvatarA.Designer.vb">
+      <DependentUpon>frmAvatarA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Avatar Selection\frmAvatarA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avatar Selection\frmAvatarB.Designer.vb">
+      <DependentUpon>frmAvatarB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Avatar Selection\frmAvatarB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\frmDifficultySelection.Designer.vb">
+      <DependentUpon>frmDifficultySelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\frmDifficultySelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\frmLoser.Designer.vb">
+      <DependentUpon>frmLoser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\frmLoser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avatar Selection\frmAvatar.Designer.vb">
+      <DependentUpon>frmAvatar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Avatar Selection\frmAvatar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question1\frmQuestion1.Designer.vb">
+      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question1\frmQuestion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question1\frmQuestion1b.Designer.vb">
+      <DependentUpon>frmQuestion1b.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question1\frmQuestion1b.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question2\frmQuestion2b.Designer.vb">
+      <DependentUpon>frmQuestion2b.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question2\frmQuestion2b.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question3\frmQuestion3b.Designer.vb">
+      <DependentUpon>frmQuestion3b.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question3\frmQuestion3b.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question4\frmQuestion4b.Designer.vb">
+      <DependentUpon>frmQuestion4b.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question4\frmQuestion4b.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question5\frmQuestion5a.Designer.vb">
+      <DependentUpon>frmQuestion5a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question5\frmQuestion5a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question2\frmQuestion2.Designer.vb">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question2\frmQuestion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question3\frmQuestion3.Designer.vb">
+      <DependentUpon>frmQuestion3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question3\frmQuestion3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question4\frmQuestion4.Designer.vb">
+      <DependentUpon>frmQuestion4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question4\frmQuestion4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question5\frmQuestion5.Designer.vb">
+      <DependentUpon>frmQuestion5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question5\frmQuestion5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question1\frmQuestion1a.Designer.vb">
+      <DependentUpon>frmQuestion1a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question1\frmQuestion1a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question2\frmQuestion2a.Designer.vb">
+      <DependentUpon>frmQuestion2a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question2\frmQuestion2a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question3\frmQuestion3a.Designer.vb">
+      <DependentUpon>frmQuestion3a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question3\frmQuestion3a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question4\frmQuestion4a.Designer.vb">
+      <DependentUpon>frmQuestion4a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question4\frmQuestion4a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question5\frmQuestion5b.Designer.vb">
+      <DependentUpon>frmQuestion5b.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Question5\frmQuestion5b.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\frmWinner.Designer.vb">
+      <DependentUpon>frmWinner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\frmWinner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Avatar Selection\frmAvatar.resx">
+      <DependentUpon>frmAvatar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Avatar Selection\frmAvatarA.resx">
+      <DependentUpon>frmAvatarA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Avatar Selection\frmAvatarB.resx">
+      <DependentUpon>frmAvatarB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\frmDifficultySelection.resx">
+      <DependentUpon>frmDifficultySelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\frmLoser.resx">
+      <DependentUpon>frmLoser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question1\frmQuestion1.resx">
+      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question1\frmQuestion1a.resx">
+      <DependentUpon>frmQuestion1a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question1\frmQuestion1b.resx">
+      <DependentUpon>frmQuestion1b.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question2\frmQuestion2.resx">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question2\frmQuestion2a.resx">
+      <DependentUpon>frmQuestion2a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question2\frmQuestion2b.resx">
+      <DependentUpon>frmQuestion2b.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question3\frmQuestion3.resx">
+      <DependentUpon>frmQuestion3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question3\frmQuestion3a.resx">
+      <DependentUpon>frmQuestion3a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question3\frmQuestion3b.resx">
+      <DependentUpon>frmQuestion3b.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question4\frmQuestion4.resx">
+      <DependentUpon>frmQuestion4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question4\frmQuestion4a.resx">
+      <DependentUpon>frmQuestion4a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question4\frmQuestion4b.resx">
+      <DependentUpon>frmQuestion4b.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question5\frmQuestion5.resx">
+      <DependentUpon>frmQuestion5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question5\frmQuestion5a.resx">
+      <DependentUpon>frmQuestion5a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question5\frmQuestion5b.resx">
+      <DependentUpon>frmQuestion5b.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\frmWinner.resx">
+      <DependentUpon>frmWinner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChaseLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
